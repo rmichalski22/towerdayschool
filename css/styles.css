@@ -84,6 +84,18 @@ header {
     margin: 0.25rem 0;
 }
 
+.contact-info a,
+.contact-info a:visited {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: var(--white);
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
 /* Navigation */
 nav {
     background-color: var(--dark-blue);
@@ -390,6 +402,18 @@ footer {
 footer p {
     margin: 0.5rem 0;
     font-size: 0.9rem;
+}
+
+footer a,
+footer a:visited {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--white);
+    text-decoration: underline;
+    opacity: 0.9;
 }
 
 /* Responsive Design */
