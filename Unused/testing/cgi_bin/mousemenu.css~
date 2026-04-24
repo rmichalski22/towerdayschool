@@ -1,0 +1,59 @@
+
+/* This is the basic definition of the on-mouseover link menu.
+ * There are only a couple of items you might consider changing here:
+ * 
+ * background: This is the static background color of the menu.
+ *            To change the highlight background color of the menu, see Menu Hover below
+ * width: The standard width of the menu in pixels (when followed by px suffix).
+ *       Adjust as you see fit, but note that this applies to all menus.
+ */
+
+.selectedanchor{ 
+background: D9E2E1;
+}
+ 
+.anylinkmenu{
+border:1px none A2ADBC; position: absolute;
+left: 0;
+top: 0;
+visibility: hidden;
+line-height: 18px;
+z-index: 100;
+background: #A2ADBC;
+width: 130px; font-style:normal; font-variant:normal; font-weight:bold; font-size:12px; font-family:Times
+}
+
+/* Menu Hover (highlight) background color
+ */
+.anylinkmenu a:hover{
+background: #D9E2E1; color:#F9ECEC
+}
+
+.anylinkmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.anylinkmenu ul li a{
+width: 100%;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid black;
+padding: 2px 0;
+text-decoration: none;
+font-weight: bold;
+text-indent: 3px;
+}
+
+
+/* The shadow stuff should just work as is.
+ */
+.anylinkshadow{
+position: absolute;
+left: 0;
+top: 0;
+z-index: 99;
+background: black;
+visibility: hidden;
+}
