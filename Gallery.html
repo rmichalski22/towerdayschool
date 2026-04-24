@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Photo gallery of Tower Day School - See our classrooms, activities, and happy students">
+    <!-- Analytics: data-website-id is the unique site ID from analytics.michalskitech.com — do not change it -->
+    <script defer src="https://analytics.michalskitech.com/script.js" data-website-id="19ee29b6-32e6-442f-b70a-3937ccee8d6f"></script>
     <title>Gallery - Tower Day School</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
@@ -47,6 +49,7 @@
     </style>
 </head>
 <body>
+    <!-- HEADER: This block is duplicated in every page. If you update the address, phone, or logo, update ALL html files. -->
     <header>
         <div class="header-container">
             <div class="logo-section">
@@ -64,6 +67,7 @@
         </div>
     </header>
 
+    <!-- NAV: class="active" highlights the current page link. Each page sets it on its own link. If you add a new page, add it here AND in every other html file's nav. -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -80,6 +84,8 @@
             <h2>Photo Gallery</h2>
             <p>Take a look at our vibrant classrooms, engaging activities, and the joyful learning experiences at Tower Day School.</p>
             
+            <!-- GALLERY IMAGES: To add a photo, copy the image to the images/ folder, then add a new gallery-item div below.
+                 Clicking a thumbnail opens it full-screen via the modal at the bottom of this file. -->
             <div class="gallery-grid">
                 <div class="gallery-item" onclick="openModal('images/TDSclassroom2010a.jpg')">
                     <img src="images/TDSclassroom2010a.jpg" alt="Tower Day School Classroom">
