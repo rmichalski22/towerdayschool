@@ -46,6 +46,19 @@
         .close-modal:hover {
             color: #ccc;
         }
+
+        .gallery-grid--small {
+            grid-template-columns: repeat(2, minmax(0, 400px));
+            justify-content: center;
+        }
+
+        .gallery-coming-soon {
+            text-align: center;
+            margin-top: 2rem;
+            font-style: italic;
+            color: #888;
+            font-size: 1.05rem;
+        }
     </style>
 </head>
 <body>
@@ -86,38 +99,16 @@
             
             <!-- GALLERY IMAGES: To add a photo, copy the image to the images/ folder, then add a new gallery-item div below.
                  Clicking a thumbnail opens it full-screen via the modal at the bottom of this file. -->
-            <div class="gallery-grid">
+            <div class="gallery-grid gallery-grid--small">
                 <div class="gallery-item" onclick="openModal('images/TDSclassroom2010a.jpg')">
                     <img src="images/TDSclassroom2010a.jpg" alt="Tower Day School Classroom">
                 </div>
                 <div class="gallery-item" onclick="openModal('images/TDSclassroom2010.jpg')">
                     <img src="images/TDSclassroom2010.jpg" alt="Classroom Activities">
                 </div>
-                <div class="gallery-item" onclick="openModal('images/AdamSarah.jpg')">
-                    <img src="images/AdamSarah.jpg" alt="Students at Tower Day School">
-                </div>
-                <div class="gallery-item" onclick="openModal('images/AdamSwing.jpg')">
-                    <img src="images/AdamSwing.jpg" alt="Playground Activities">
-                </div>
-                <div class="gallery-item" onclick="openModal('images/Boy.jpg')">
-                    <img src="images/Boy.jpg" alt="Student Learning">
-                </div>
-                <div class="gallery-item" onclick="openModal('images/GirlCones.jpg')">
-                    <img src="images/GirlCones.jpg" alt="Creative Activities">
-                </div>
-                <div class="gallery-item" onclick="openModal('images/Harrison.jpg')">
-                    <img src="images/Harrison.jpg" alt="Student at Tower Day School">
-                </div>
-                <div class="gallery-item" onclick="openModal('images/Halloween.jpg')">
-                    <img src="images/Halloween.jpg" alt="Halloween Celebration">
-                </div>
-                <div class="gallery-item" onclick="openModal('images/K2013_1.jpg')">
-                    <img src="images/K2013_1.jpg" alt="Tower Day School Class">
-                </div>
-                <div class="gallery-item" onclick="openModal('images/K2013_2.jpg')">
-                    <img src="images/K2013_2.jpg" alt="Tower Day School Activities">
-                </div>
             </div>
+
+            <p class="gallery-coming-soon">More photos coming soon!</p>
         </section>
     </main>
 
